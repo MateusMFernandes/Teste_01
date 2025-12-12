@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Receitas de Amigurumi — Ticia Ávila</title>
-  <meta name="description" content="Receitas de amigurumi e peças em crochê. Receitas passo a passo para amigurumis feitos à mão." />
+  <meta name="description" content="Receitas de amigurumi e peças em crochê. Receitas passo a passo para fazer em casa." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,113 +58,124 @@
       </p>
     </section>
 
-    <!-- Receitas (antigo "Catálogo") -->
+    <!-- Receitas -->
     <section id="receitas" class="catalogo container" tabindex="-1" aria-label="Receitas de amigurumi">
       <h2>Receitas</h2>
 
       <div class="grid-products" id="grid-products">
-        <!-- cards (mantive os cards visuais; apenas adicionei data-recipe-id quando há receita) -->
-
-        <article class="product-card" data-category="kits"  tabindex="0" data-recipe-id="jogo-elegancia">
-          <img src="Catalogo/004_01.jpg" loading="lazy" alt="Jogo Elegância">
+        <!-- cards: observe que removi os preços e adicionei botão flutuante sobre a imagem -->
+        <article class="product-card" tabindex="0" data-recipe-id="jogo-elegancia">
+          <div class="product-media">
+            <img src="Catalogo/004_01.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Jogo Elegância">
+            <button class="btn-card-action" aria-label="Ver receita de Jogo Elegância">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Jogo Elegância</h3>
             <p class="desc">Kit com 3 peças de tamanhos variados</p>
-            <p class="product-price">R$ 120,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="tapetes" tabindex="0">
-          <img src="Catalogo/001_05.jpg" loading="lazy" alt="Caminho de mesa folha">
+        <article class="product-card" tabindex="0">
+          <div class="product-media">
+            <img src="Catalogo/001_05.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Caminho de mesa folha">
+            <button class="btn-card-action" aria-hidden="true" tabindex="-1" style="display:none">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Caminho de mesa folha</h3>
             <p class="desc">Medida: 85 x 45cm</p>
-            <p class="product-price">R$ 50,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="kits" tabindex="0" data-recipe-id="jogo-floratta">
-          <img src="Catalogo/004_04.jpg" loading="lazy" alt="Jogo de banheiro Floratta">
+        <article class="product-card" tabindex="0" data-recipe-id="jogo-floratta">
+          <div class="product-media">
+            <img src="Catalogo/004_04.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Jogo de banheiro Floratta">
+            <button class="btn-card-action" aria-label="Ver receita de Jogo de banheiro Floratta">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Jogo de banheiro Floratta</h3>
             <p class="desc">Kit com 3 peças de tamanhos variados</p>
-            <p class="product-price">R$ 160,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="amigurumis" tabindex="0" data-recipe-id="nossa-aparecida">
-          <img src="Catalogo/003_01.jpg" loading="lazy" alt="Nossa Senhora Aparecida amigurumi">
+        <article class="product-card" tabindex="0" data-recipe-id="nossa-aparecida">
+          <div class="product-media">
+            <img src="Catalogo/003_01.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Nossa S. Aparecida">
+            <button class="btn-card-action" aria-label="Ver receita de Nossa S. Aparecida">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Nossa S. Aparecida</h3>
             <p class="desc">Medida: 15cm</p>
-            <p class="product-price">R$ 100,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="amigurumis" tabindex="0" data-recipe-id="capivara-chaveiro">
-          <img src="Catalogo/003_04.jpg" loading="lazy" alt="Chaveiro Capivara">
+        <article class="product-card" tabindex="0" data-recipe-id="capivara-chaveiro">
+          <div class="product-media">
+            <img src="Catalogo/003_04.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Chaveiro Capivara">
+            <button class="btn-card-action" aria-label="Ver receita de Chaveiro Capivara">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Chaveiro Capivara</h3>
             <p class="desc">Medida: 8cm</p>
-            <p class="product-price">R$ 15,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="bolsas" tabindex="0">
-          <img src="Catalogo/002_01.jpg" loading="lazy" alt="Bolsa Onix">
-          <div class="product-body">
-            <h3 class="product-name">Bolsa Onix</h3>
-            <p class="desc">Sobre encomenda</p>
-            <p class="product-price">R$ 100,00</p>
-          </div>
-        </article>
+        <!-- ... demais cards (mantive estrutura; adicione data-recipe-id onde houver receita) ... -->
 
-        <article class="product-card" data-category="amigurumis" tabindex="0" data-recipe-id="banguela">
-          <img src="Catalogo/003_02.jpg" loading="lazy" alt="Banguela amigurumi">
+        <article class="product-card" tabindex="0" data-recipe-id="banguela">
+          <div class="product-media">
+            <img src="Catalogo/003_02.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Banguela">
+            <button class="btn-card-action" aria-label="Ver receita de Banguela">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Banguela</h3>
             <p class="desc">Medida: 10cm</p>
-            <p class="product-price">R$ 50,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="amigurumis" tabindex="0" data-recipe-id="furia-luz">
-          <img src="Catalogo/003_03.jpg" loading="lazy" alt="Furia da luz">
+        <article class="product-card" tabindex="0" data-recipe-id="furia-luz">
+          <div class="product-media">
+            <img src="Catalogo/003_03.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Furia da luz">
+            <button class="btn-card-action" aria-label="Ver receita de Furia da luz">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Furia da luz</h3>
             <p class="desc">Medida: 10cm</p>
-            <p class="product-price">R$ 50,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="amigurumis" tabindex="0" data-recipe-id="vaca">
-          <img src="Catalogo/003_05.jpg" loading="lazy" alt="Vaca amigurumi">
+        <article class="product-card" tabindex="0" data-recipe-id="vaca">
+          <div class="product-media">
+            <img src="Catalogo/003_05.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Vaca">
+            <button class="btn-card-action" aria-label="Ver receita de Vaca">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Vaca</h3>
             <p class="desc">Medida: 12cm</p>
-            <p class="product-price">R$ 40,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="amigurumis" tabindex="0" data-recipe-id="santinha">
-          <img src="Catalogo/003_06.jpg" loading="lazy" alt="Santinha amigurumi">
+        <article class="product-card" tabindex="0" data-recipe-id="santinha">
+          <div class="product-media">
+            <img src="Catalogo/003_06.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Santinha">
+            <button class="btn-card-action" aria-label="Ver receita de Santinha">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Santinha</h3>
             <p class="desc">Medida: 8cm</p>
-            <p class="product-price">R$ 40,00</p>
           </div>
         </article>
 
-        <article class="product-card" data-category="amigurumis" tabindex="0" data-recipe-id="mike-wazowski">
-          <img src="Catalogo/003_08.jpg" loading="lazy" alt="Mike Wazowski amigurumi">
+        <article class="product-card" tabindex="0" data-recipe-id="mike-wazowski">
+          <div class="product-media">
+            <img src="Catalogo/003_08.jpg" loading="lazy" decoding="async" fetchpriority="low" alt="Mike Wazowski">
+            <button class="btn-card-action" aria-label="Ver receita de Mike Wazowski">Ver Receita</button>
+          </div>
           <div class="product-body">
             <h3 class="product-name">Mike Wazowski</h3>
             <p class="desc">Medida: 14cm</p>
-            <p class="product-price">R$ 50,00</p>
           </div>
         </article>
 
-        <!-- adicione mais cards conforme necessidade -->
       </div>
     </section>
 
@@ -191,7 +202,7 @@
       <button class="modal-close" aria-label="Fechar modal">&times;</button>
 
       <div class="modal-inner">
-        <div class="modal-media">
+        <div class="modal-media" aria-hidden="false">
           <img id="modal-img" alt="">
         </div>
 
@@ -204,13 +215,30 @@
             </div>
           </div>
 
-          <div id="modal-recipe" class="modal-recipe" tabindex="0" role="region" aria-label="Receita do amigurumi">
+          <div id="modal-recipe" class="modal-recipe printable" tabindex="0" role="region" aria-label="Receita do amigurumi">
             <!-- receita em texto (renderizada convertendo \n em <br>) -->
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Fallback share modal (aparece quando Web Share API não disponível or as fallback) -->
+  <div id="share-fallback" class="share-fallback" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="share-title">
+    <div class="share-panel">
+      <button class="share-close" aria-label="Fechar compartilhamento">&times;</button>
+      <h3 id="share-title">Compartilhar receita</h3>
+      <p>Clique em copiar e abra o app desejado para colar a receita.</p>
+      <textarea id="share-textarea" readonly rows="10"></textarea>
+      <div class="share-actions">
+        <button id="share-copy-btn" class="btn btn-copy">Copiar</button>
+        <button id="share-close-btn" class="btn" aria-label="Fechar">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" aria-hidden="true" role="status" aria-live="polite"></div>
 
   <!-- Recipes (JSON embedded) - recipe text uses \n for line breaks -->
   <script type="application/json" id="recipe-nossa-aparecida">
