@@ -101,7 +101,9 @@ body{
   font-weight:700;
   box-shadow: var(--shadow);
 }
-
+.linkCard{
+  text-decoration: none;
+}
 /* Sobre */
 .sobre{ padding:1.25rem 0 2rem; }
 .sobre h2{ font-family:"Playfair Display", serif; font-size:1.5rem; margin-bottom:.5rem; color:var(--text); }
@@ -302,15 +304,9 @@ a:focus, button:focus, .product-card:focus { outline:3px solid rgba(217,154,108,
   text-decoration:none;
   border:0;
   cursor:pointer;
-}
-.btn-copy{
   background: rgba(217,154,108,0.12);
   color:var(--text);
   border:1px solid rgba(217,154,108,0.12);
-}
-.btn-share{
-  background: linear-gradient(180deg,var(--accent), #c5774c);
-  color:white;
 }
 
 /* recipe area */
