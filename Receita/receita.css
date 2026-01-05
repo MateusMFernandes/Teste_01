@@ -22,8 +22,9 @@
 
 /* Conteúdo da receita */
 .recipe-content{
+  margin-top: 5rem;
   background:#fff;
-  padding:1.5rem;
+  padding: 1.5rem;
   border-radius:12px;
   box-shadow: var(--shadow);
 }
@@ -44,10 +45,15 @@
 /* Mobile */
 @media (max-width: 768px){
   .recipe-layout{
+    padding-top: 0px;
     grid-template-columns: 1fr;
   }
 
   .recipe-media h1{
     text-align:center;
+  }
+  .recipe-content{
+    margin-top: 0rem;
+    padding-top: 0px;
   }
 }
