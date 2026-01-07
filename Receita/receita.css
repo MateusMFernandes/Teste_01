@@ -45,22 +45,31 @@
   line-height: 2rem;
 }
 
+.TituloReceita{
+  padding: 0px;
+  margin: 0.5rem 0;
+}
+
 /* Mobile */
 @media (max-width: 768px){
   .recipe-layout{
     padding-top: 0px;
     grid-template-columns: 1fr;
+    gap:1rem;
   }
-
   .recipe-media h1{
+    margin-top: 1rem;
     text-align:center;
   }
+
   .recipe-content{
     margin-top: 0rem;
     padding-top: 0px;
   }
+
 .TituloReceita{
   padding: 0px;
-  margin: 0px;
+  margin: 0.5rem 0 0 0;
 }
+
 }
