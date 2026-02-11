@@ -1,15 +1,15 @@
-.recipe-layout{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:2rem;
-  padding:2rem 1;
-  align-items:flex-start;
+#recipe-title{
+  margin-top: 0px;
+  padding-top: 0.5rem;
 }
-
+#topo {
+  padding-bottom: 1rem;
+}
 /* Imagem + título */
 .recipe-media h1{
   font-family:"Playfair Display", serif;
   font-size:2rem;
+  margin-top: 0px;
   margin-bottom:1rem;
   color:var(--text);
 }
@@ -22,22 +22,28 @@
 
 /* Conteúdo da receita */
 .recipe-content{
-  margin-top: 5rem;
-  background:#fff;
+  background:#f1e0cf;
+  padding-top: 10rem;
   padding: 1.5rem;
-  border-radius:12px;
   box-shadow: var(--shadow);
 }
 
 .recipe-actions{
   display:flex;
-  gap:.75rem;
+  gap:1rem;
   margin: 1.5rem 0 0 0;
 }
 
-.recipe-text{
-  color:var(--muted);
-  font-size:.95rem;
+.media-produto img{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width:100%;
+  border-radius:12px;
+  box-shadow: var(--shadow);
+}
+
+#btnShare{
+  background-color: #d99a6c;
 }
 
 .ListaRecipe{
@@ -48,9 +54,9 @@
   text-align: justify;
 }
 
-.TituloReceita{
-  padding: 0px;
-  margin: 0.5rem 0;
+.site-footer{
+  padding: 0rem;
+  background-color: #edcab1;
 }
 
 /* Mobile */

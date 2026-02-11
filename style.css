@@ -22,6 +22,7 @@ body{
   background: linear-gradient(180deg, var(--bg), #fff);
   -webkit-font-smoothing:antialiased;
   line-height:1.45;
+  background-attachment: fixed;
 }
 
 /* Container */
