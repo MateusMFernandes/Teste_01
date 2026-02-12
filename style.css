@@ -13,7 +13,9 @@
 }
 
 /* Reset */
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box
+}
 html,body{height:100%}
 body{
   margin:0;
@@ -24,7 +26,10 @@ body{
   line-height:1.45;
   background-attachment: fixed;
 }
-
+#top{
+  position: fixed;
+  width: 100%;
+}
 /* Container */
 .container{ max-width:var(--container); margin:0 auto; padding:0 1rem; }
 
@@ -68,11 +73,12 @@ body{
 }
 
 /* Hamburger */
-.hamburger{ display:none; background:transparent; border:0; padding:.5rem; cursor:pointer; }
-.hamburger span{ display:block; width:22px; height:2px; background:var(--text); margin:4px 0; border-radius:2px; }
+.hamburger{ display:none; background:transparent; border:0; padding:.5rem; cursor:pointer;}
+.hamburger span{ display:block; width:22px; height:2px; background:var(--text); margin:4px 10px; border-radius:2px; }
 
 /* Hero */
 .hero{
+  margin-top: 2.5rem;
   position:relative;
   min-height:42vh;
   display:flex;
@@ -129,12 +135,12 @@ body{
   box-shadow: var(--shadow);
   display:flex;
   flex-direction:column;
-  transition: transform .18s ease, box-shadow .18s ease;
+  transition: transform .20s ease, box-shadow .20s ease;
   cursor: default;
   user-select: none;
   position:relative;
 }
-.product-card:hover{ transform: translateY(-6px); box-shadow: 0 16px 36px rgba(59,47,42,0.12); }
+.product-card:hover{ transform: translateY(-6px); box-shadow: 0 16px 36px rgba(59, 47, 42, 0.24); }
 
 /* product-media: relative to position overlay button */
 .product-media{
