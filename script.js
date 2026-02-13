@@ -121,11 +121,45 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', updateScrollSpy);
   window.addEventListener('load', updateScrollSpy);
 
-  /* -----------------------
-     Small accessibility: trap focus in share fallback too
-  ------------------------*/
+  const shareFallback = document.getElementById('share-fallback');
+
+if (shareFallback) {
   shareFallback.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeShareFallback();
   });
+}
+
+
+const hero = document.querySelector(".hero");
+const dots = document.querySelectorAll(".hero-dots input");
+
+if (hero && dots.length > 0) {
+
+  const images = [
+    "Img/002.jpg",
+    "Img/003.jpg",
+    "Img/001.jpg"
+  ];
+
+  let current = 0;
+
+  function changeSlide(index) {
+    hero.style.backgroundImage = `url('${images[index]}')`;
+    dots[index].checked = true;
+    current = index;
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("change", () => {
+      changeSlide(index);
+    });
+  });
+
+  setInterval(() => {
+    let next = (current + 1) % images.length;
+    changeSlide(next);
+  }, 6000);
+}
+
 
 });
