@@ -88,7 +88,7 @@ body{
   color:var(--card);
   overflow:hidden;
 
-  background-image: url("img/001.jpg"); /* imagem inicial */
+  background-image: url("Img/001.jpg"); /* imagem inicial */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -412,7 +412,7 @@ a:focus, button:focus, .product-card:focus { outline:3px solid rgba(217,154,108,
 
 .hero-dots {
   position: absolute;
-  bottom: -75px;
+  bottom: -55px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
