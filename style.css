@@ -124,7 +124,7 @@ body{
 .hero-title {
   margin: .5rem 0rem;
   font-family: "Playfair Display", serif;
-  font-size: 0.5rem;
+  font-size: 2.5rem;
   color: var(--text);
   letter-spacing: -0.5px;
 }
