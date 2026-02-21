@@ -88,7 +88,7 @@ body{
   color:var(--card);
   overflow:hidden;
 
-  background-image: url("Img/001.jpg"); /* imagem inicial */
+  background-image: url("Img/003.jpg"); /* imagem inicial */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
