@@ -1,3 +1,7 @@
+.recipe-layout {
+  background-color: #fff7ee;;
+}
+
 #recipe-title{
   margin-top: 0px;
   padding-top: 0.5rem;
@@ -26,7 +30,7 @@
 
 /* Conteúdo da receita */
 .recipe-content{
-  background:#f1e0cf;
+  background:#fff;
   padding-top: 10rem;
   padding: 1.5rem;
   box-shadow: var(--shadow);
