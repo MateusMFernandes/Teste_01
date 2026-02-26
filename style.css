@@ -227,14 +227,14 @@ body{
 @media screen and (min-width: 641px) and (max-width: 900px){
   .hero { height: 80vh; width: 100%; margin-top: 2rem; padding-top: 0px;}
   .hero-inner {max-width: 600px;}
-  #top{ padding: 0.5rem 0;}
+  #top{ padding: 0.6rem 0;}
   .hero-title { font-size: 1.5rem; }
   .hero-sub{ font-size: 1rem;}
   .grid-products{ grid-template-columns: repeat(2, 1fr); }
   .product-card img{ height:200px; }
   .container {padding: 0 1.25rem;}
   .catalogo {background-color: var(--bg);}
-  .container > p {font-size: 1rem;}
+  .container > p {font-size: .7rem;}
   .container > h2 {font-size: 1.2rem;}
 }
 @media (max-width: 640px){
