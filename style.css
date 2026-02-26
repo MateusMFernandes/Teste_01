@@ -225,7 +225,11 @@ body{
 
 /* Responsive grid */
 @media screen and (min-width: 641px) and (max-width: 900px){
-  #top{ padding: 0.8rem 0;}
+  .hero { height: 80vh; width: 100%; margin-top: 2rem; padding-top: 0px;}
+  .hero-inner {max-width: 600px;}
+  #top{ padding: 0.5rem 0;}
+  .hero-title { font-size: 1.5rem; }
+  .hero-sub{ font-size: 1rem;}
   .grid-products{ grid-template-columns: repeat(2, 1fr); }
   .product-card img{ height:200px; }
   .container {padding: 0 1.25rem;}
@@ -245,7 +249,14 @@ body{
   .hero {padding: 0.5rem 0 1rem;}
 }
 @media ( min-width: 901px){
-
+  .hero-title { font-size: 1.5rem; }
+  .header-inner{ padding:0.5rem 0;}
+  .hero-inner {max-width: 1000px; max-height: 250px;}
+  .hero { height: 80vh; width: 100%; background-size: cover; margin-top: 0px;}
+  .catalogo {padding: 0rem 1.5rem; max-width: 1100px;}
+  #sobre{padding: 0.5rem 1.5rem; max-width: 1100px;}
+  .contato{padding: 0.5rem 1.5rem; max-width: 1100px}
+  .hero-dots{ bottom: -90px;}
 }
 
 /* Focus styles */
