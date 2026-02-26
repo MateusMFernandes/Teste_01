@@ -234,7 +234,7 @@ body{
   .product-card img{ height:200px; }
   .container {padding: 0 1.25rem;}
   .catalogo {background-color: var(--bg);}
-  .container > p {font-size: .7rem;}
+  .container > p {font-size: .6rem;}
   .container > h2 {font-size: 1.2rem;}
 }
 @media (max-width: 640px){
