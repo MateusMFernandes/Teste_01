@@ -1,21 +1,65 @@
-/* =====================================
-   RECEITA - MOBILE FIRST ESTÁVEL
-===================================== */
+/* =========================================
+   RESET PROFISSIONAL
+========================================= */
 
-/* =========================
-   CONTAINER DA PÁGINA
-========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #faf8f6;
+  color: #3b2f2a;
+  line-height: 1.6;
+}
+
+/* =========================================
+   VARIÁVEIS
+========================================= */
+
+:root {
+  --text: #3b2f2a;
+  --muted: #6f625c;
+  --accent: #c27d60;
+  --container-width: 1200px;
+}
+
+/* =========================================
+   CONTAINER PRINCIPAL (isolado)
+========================================= */
 
 .recipe-layout {
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--container-width);
   margin: 0 auto;
-  padding: 4rem 1.5rem; /* respiro lateral real */
+  padding: 4rem 1.5rem; /* espaço lateral real */
 }
 
-/* =========================
-   BLOCO BASE (Mobile)
-========================= */
+/* =========================================
+   TOPO
+========================================= */
+
+#topo {
+  margin-bottom: 5rem;
+}
+
+.recipe-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* =========================================
+   BLOCO PADRÃO
+========================================= */
 
 .recipe-block {
   display: flex;
@@ -24,36 +68,20 @@
   margin-bottom: 5rem;
 }
 
-/* =========================
-   TOPO
-========================= */
-
-#topo {
-  margin-bottom: 6rem;
-}
-
-.recipe-title {
-  font-family: "Playfair Display", serif;
-  font-size: 2.2rem;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-  color: var(--text);
-}
-
-/* =========================
+/* =========================================
    IMAGEM
-========================= */
+========================================= */
 
 .block-media img {
   width: 100%;
-  display: block;
   border-radius: 18px;
-  box-shadow: 0 20px 50px rgba(59,47,42,0.15);
+  box-shadow: 0 20px 50px rgba(59, 47, 42, 0.15);
+  display: block;
 }
 
-/* =========================
+/* =========================================
    TEXTO
-========================= */
+========================================= */
 
 .block-text {
   width: 100%;
@@ -62,15 +90,14 @@
 .TituloReceita {
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
-  margin-top: 2rem;
-  margin-bottom: 0.8rem;
-  color: var(--text);
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .ListaRecipe {
   padding-left: 1.2rem;
+  margin: 0;
   font-size: 1rem;
-  line-height: 1.8;
   color: var(--muted);
 }
 
@@ -78,13 +105,13 @@
   margin-bottom: 0.6rem;
 }
 
-/* =========================
+/* =========================================
    BOTÃO
-========================= */
+========================================= */
 
 .recipe-actions {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 #btnShare {
@@ -96,13 +123,23 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* =========================
+#btnShare:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =========================================
    TABLET (768px+)
-========================= */
+========================================= */
 
 @media (min-width: 768px) {
+
+  .recipe-layout {
+    padding: 5rem 2rem;
+  }
 
   .recipe-block {
     flex-direction: row;
@@ -123,9 +160,9 @@
   }
 }
 
-/* =========================
+/* =========================================
    DESKTOP (1024px+)
-========================= */
+========================================= */
 
 @media (min-width: 1024px) {
 

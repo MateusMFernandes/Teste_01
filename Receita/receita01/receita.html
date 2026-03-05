@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Receita de Amigurumi</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../../style.css" />
   <link rel="stylesheet" href="../receita.css" />
@@ -23,83 +24,59 @@
   </div>
 </header>
 
-<main class="recipe-page">
+<main class="recipe-layout">
 
-  <section class="recipe-layout">
+  <!-- TOPO -->
+  <section id="topo">
+    <h1 class="recipe-title">
+      Receita de Amigurumi
+    </h1>
+  </section>
 
-    <!-- TOPO -->
-    <div id="topo" class="recipe-block">
-      <div class="block-media">
-        <h1 class="recipe-title">Aparecida</h1>
-        <img src="001.jpg" alt="Amigurumi em crochê">
-      </div>
+  <!-- BLOCO 1 -->
+  <section class="recipe-block">
 
-      <div class="block-text">
-        <h2 class="TituloReceita">Materiais:</h2>
-        <ul class="ListaRecipe">
-          <li>Linha Amigurumi</li>
-          <li>Agulha 2.5mm</li>
-        </ul>
-
-        <h2 class="TituloReceita">Abreviação:</h2>
-        <ul class="ListaRecipe">
-          <li>pb = ponto baixo</li>
-          <li>aum = aumento</li>
-        </ul>
-
-        <h2 class="TituloReceita">Observação:</h2>
-        <ul class="ListaRecipe">
-          <li>Use marcador de ponto</li>
-        </ul>
-      </div>
+    <div class="block-media">
+      <img src="../receita01/001.jpg" alt="Amigurumi exemplo">
     </div>
 
-    <!-- BLOCO 2 -->
-    <div class="recipe-block reverse">
-      <div class="block-media">
-        <img src="001.jpg" alt="Cabeça do amigurumi">
-      </div>
-
-      <div class="block-text">
-        <h2 class="TituloReceita">Cabeça</h2>
-        <ul class="ListaRecipe">
-          <li>1º carr: AM com 6 pb</li>
-          <li>2º carr: 1 aum em cada pt (12 pt)</li>
-          <li>3º carr: 1 pb e 1 aum (18 pt)</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- BLOCO 3 -->
-    <div class="recipe-block">
-      <div class="block-media">
-        <img src="001.jpg" alt="Manto do amigurumi">
-      </div>
-
-      <div class="block-text">
-        <h2 class="TituloReceita">Manto</h2>
-        <ul class="ListaRecipe">
-          <li>1º carr: 6 pb dentro AM</li>
-          <li>2º carr: 1 aum (12 pt)</li>
-          <li>3º carr: 1 pb e 1 aum (18 pt)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="recipe-actions">
-      <button id="btnShare">Compartilhar</button>
+    <div class="block-text">
+      <h2 class="TituloReceita">Materiais</h2>
+      <ul class="ListaRecipe">
+        <li>Fio 100% algodão</li>
+        <li>Agulha 2.5mm</li>
+        <li>Fibra siliconada</li>
+        <li>Agulha de tapeçaria</li>
+      </ul>
     </div>
 
   </section>
 
+  <!-- BLOCO 2 (invertido) -->
+  <section class="recipe-block reverse">
+
+    <div class="block-media">
+      <img src="../receita01/001.jpg" alt="Processo do amigurumi">
+    </div>
+
+    <div class="block-text">
+      <h2 class="TituloReceita">Modo de Fazer</h2>
+      <ul class="ListaRecipe">
+        <li>Inicie com anel mágico.</li>
+        <li>Faça 6 pontos baixos.</li>
+        <li>Aumente conforme receita.</li>
+        <li>Finalize e feche com ponto baixíssimo.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- BOTÃO -->
+  <div class="recipe-actions">
+    <button id="btnShare">Compartilhar Receita</button>
+  </div>
+
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Ticia Ávila artes</p>
-  </div>
-</footer>
-
-<script src="../receita.js"></script>
 </body>
 </html>
