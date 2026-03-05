@@ -31,6 +31,35 @@ body {
   --container-width: 1200px;
 }
 
+/* Header */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:60;
+  backdrop-filter: blur(6px);
+  background: rgba(255,248,242,0.95);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  transition: box-shadow .18s ease, border-color .18s ease;
+}
+.site-header.scrolled {
+  box-shadow: 0 2px 8px rgba(59,47,42,0.05);
+  border-bottom: 1px solid transparent;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:0.9rem 0;
+}
+.logo{
+  font-family: "Playfair Display", serif;
+  font-size:1.25rem;
+  color: var(--accent); /* per designer request */
+  text-decoration:none;
+}
+.logo-sub{ font-weight:300; color:var(--muted); font-size:.9rem; margin-left:.15rem; }
+
 /* =========================================
    CONTAINER PRINCIPAL (isolado)
 ========================================= */
