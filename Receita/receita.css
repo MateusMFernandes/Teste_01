@@ -202,6 +202,9 @@ body {
   #contato > p {
     font-size: 1rem;
   }  
+    .contact-list > li  {
+    font-size: 0.8rem;
+  }  
   .TituloReceita{
     font-size: 1.8rem;
   }
