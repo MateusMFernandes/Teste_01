@@ -51,7 +51,7 @@ body {
   align-items:center;
   justify-content:space-between;
   gap:1rem;
-  padding:0.9rem 0;
+  padding:0.9rem 1rem;
 }
 .logo{
   font-family: "Playfair Display", serif;
